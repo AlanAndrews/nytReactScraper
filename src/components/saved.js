@@ -1,5 +1,5 @@
 import React from "react";
-import SavedListItem from "./saved_list_item";
+import SavedListItem from "./saved_item";
 
 const Saved = props => {
 	if (!props.savedItems.length) {

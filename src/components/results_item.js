@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from '../utils/API';
 import moment from "moment";
 
-class ResultsListItem extends Component {
+class ResultsItem extends Component {
 	constructor(props) {
 		super();		
 

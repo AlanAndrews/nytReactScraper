@@ -1,5 +1,5 @@
 import React from "react";
-import ResultsListItem from "./results_list_item";
+import ResultsItem from "./results_item";
 
 const Results = props => {
 	if (!props.results.length) {
@@ -7,7 +7,7 @@ const Results = props => {
 	}
 	const articleItems = props.results.map((article, index) => {
 		if (index < 5) {
-			return <ResultsListItem key={article._id} article={article} getArticles={props.getArticles} />;
+			return <ResultsItem key={article._id} article={article} getArticles={props.getArticles} />;
 		}
 	});
 	return (

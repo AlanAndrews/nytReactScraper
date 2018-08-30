@@ -1,12 +1,12 @@
 import React from 'react';
-import SearchResultContainer from './SearchResultContainer';
+import Container from './Container';
 
 const Main = (props) => {
 	console.log("process ", process.env)
   
     return (
       <div className="Main">
-        <SearchResultContainer />
+        <Container />
       </div>
     );
 }
