@@ -8,14 +8,14 @@ var routes = require("./routes/routes");
 var apiController = require('./controllers/apiController')
 
 // Set up a default port, configure mongoose, configure our middleware
-var PORT = process.env.PORT || 4000;
+var PORT = process.env.PORT || 3000;   
 mongoose.Promise = bluebird;
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/build"));
 
-var db = process.env.MONGODB_URI || "mongodb://localhost/nyt-react";
+var db = process.env.MONGODB_URI || "mongodb://localhost/nytreact";
 
 // Connect mongoose to our database
 mongoose.connect(db, function(error) {

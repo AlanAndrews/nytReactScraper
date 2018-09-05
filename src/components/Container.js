@@ -18,7 +18,6 @@ class SearchResultContainer extends Component {
         };
     }
 
-    // Getting all articles when the component mounts
     componentDidMount() {
       this.getArticles();
     }
